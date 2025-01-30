@@ -1,0 +1,49 @@
+/*
+  Name: Jahsiyah varona
+  Date: 2025.01.30
+  CSC 372-01
+
+  Stylesheet for the index.html page. Includes basic styling for layout and typography.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8dc;
+    /* Cornsilk */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #A4A400;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #A4A400;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section img {
+    border-radius: 10px;
+}
+
+footer p {
+    margin-top: 20px;
+    color: #555;
+}

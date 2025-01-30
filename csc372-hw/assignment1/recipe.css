@@ -1,0 +1,119 @@
+/*
+  Name: Jane Doe
+  Date: 2025.01.30
+  CSC 372-01
+
+  Stylesheet for pie.html page. Includes styles for headings, body, lists, links, blockquotes, and extra features like background image and tooltips.
+*/
+
+/* 1. Generic Selectors */
+body {
+    font-family: Georgia, Garamond, serif;
+    background-color: #ffffff;
+    /* White */
+    color: #404040;
+    /* Dark Gray */
+    margin: 0;
+    padding: 20px;
+    background-image: url('silverware.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+h1,
+h2 {
+    color: #A4A400;
+    /* Heading color */
+    background-color: #F0F0F0;
+    /* Heading background */
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18pt;
+    font-weight: normal;
+    text-align: left;
+}
+
+a {
+    color: #A4A400;
+    /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.pie-image {
+    flex: 0 0 150px;
+    /* Fixed width */
+    text-align: left;
+    margin-left: 2=px;
+}
+
+.pie-image img {
+    width: 20%;
+    /* Ensures the image fits within the container */
+    height: auto;
+    border: 1px solid #A4A400;
+    border-radius: 5px;
+}
+
+/* 3. List Styles */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+ul li::marker {
+    content: url('pie_icon.gif');
+    /* Extra Feature 3: Pie Bullet */
+}
+
+/* 4. Blockquotes */
+blockquote.user-quote {
+    background-color: #FFFFA8;
+    /* Light Yellow */
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-left: 5px solid #A4A400;
+    font-style: italic;
+}
+
+blockquote.user-quote em {
+    font-style: italic;
+}
+
+blockquote.user-quote strong {
+    font-weight: bold;
+}
+
+/* 5. Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #A4A400;
+    border-radius: 5px;
+}
+
+/* 6. Footer */
+footer pre {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #404040;
+    margin-top: 40px;
+}
