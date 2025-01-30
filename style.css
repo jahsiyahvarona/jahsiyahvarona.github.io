@@ -1,0 +1,47 @@
+/*
+  Name: Jahsiyah Varona
+  Date: 2025.01.30
+  CSC 372-01
+
+  Stylesheet for the GitHub Pages landing page. Includes styles for layout and typography.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fd9814;
+    color: rgb(5, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #005fa3;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
