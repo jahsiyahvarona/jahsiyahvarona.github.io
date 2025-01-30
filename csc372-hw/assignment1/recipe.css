@@ -15,7 +15,7 @@ body {
     /* Dark Gray */
     margin: 0;
     padding: 20px;
-    background-image: url('silverware.jpg');
+    background-image: url('images/silverware.jpg');
     background-repeat: repeat;
     background-attachment: fixed;
 }
@@ -80,7 +80,7 @@ ol {
 }
 
 ul li::marker {
-    content: url('pie_icon.gif');
+    content: url('images/pie_icon.gif');
     /* Extra Feature 3: Pie Bullet */
 }
 
