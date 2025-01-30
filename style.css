@@ -14,6 +14,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: url('/jahsiyahvarona.github.io/csc372-hw/assignment1/images/Screenshot 2025-01-30 at 5.44.21 PM.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 .container {
