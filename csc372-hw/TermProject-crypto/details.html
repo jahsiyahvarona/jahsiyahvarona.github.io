@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FOMO - Product Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #FF8C00;">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="/csc372-hw/TermProject-crypto/images/FOMO_logo.png" alt="FOMO Logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Left Column: Main Product Image and Thumbnails -->
+            <div class="col-md-6">
+                <!-- Main Product Image with multi-image functionality -->
+                <img id="mainImage" src="/csc372-hw/TermProject-crypto/images/FOMO_tee/Front.png" alt="FOMO T-Shirt"
+                    class="img-fluid rounded product-detail-image">
+                <!-- Thumbnail Images -->
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <img src="/csc372-hw/TermProject-crypto/images/FOMO_tee/Front.png" alt="FOMO T-Shirt view 2"
+                            class="img-fluid thumbnail-image">
+                    </div>
+                    <div class="col-4">
+                        <img src="/csc372-hw/TermProject-crypto/images/FOMO_tee/Back.png" alt="FOMO T-Shirt view 2"
+                            class="img-fluid thumbnail-image">
+                    </div>
+
+                </div>
+            </div>
+            <!-- Right Column: Product Details -->
+            <div class="col-md-6">
+                <h2>FOMO T-Shirt</h2>
+                <p class="text-warning h4">$24.99</p>
+                <p>Show your passion for FOMO with this premium quality T-shirt. Made from 100% cotton, this comfortable
+                    and stylish tee is perfect for crypto enthusiasts who want to make a bold statement.</p>
+                <ul class="list-unstyled">
+                    <li><strong>Material:</strong> 100% Cotton</li>
+                    <li><strong>Available Sizes:</strong> S, M, L, XL</li>
+                    <li><strong>Color:</strong> White with an eye-catching orange/white FOMO logo</li>
+                </ul>
+                <button class="btn btn-lg" style="background-color: #FF8C00; color: white;"
+                    onclick="window.location.href='cart.html'">
+                    Add to Cart
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Review Section -->
+        <section id="reviews" class="mt-5">
+            <h3>Customer Reviews</h3>
+
+            <!-- Existing Reviews -->
+            <div class="review-list">
+                <div class="review-item border p-3 mb-3">
+                    <p class="mb-1"><strong>Jane Doe</strong> - <span class="text-warning">★★★★★</span></p>
+                    <p>Great quality and design! This tee really shows my love for FOMO.</p>
+                </div>
+                <div class="review-item border p-3 mb-3">
+                    <p class="mb-1"><strong>John Smith</strong> - <span class="text-warning">★★★★☆</span></p>
+                    <p>Really like the style, but would prefer more color options.</p>
+                </div>
+            </div>
+
+            <!-- Review Submission Form -->
+            <div class="review-form mt-4">
+                <h4>Write a Review</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="reviewerName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="reviewerName" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="reviewRating" class="form-label">Rating</label>
+                        <select class="form-select" id="reviewRating">
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Good</option>
+                            <option value="3">3 - Average</option>
+                            <option value="2">2 - Poor</option>
+                            <option value="1">1 - Terrible</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reviewText" class="form-label">Review</label>
+                        <textarea class="form-control" id="reviewText" rows="3"
+                            placeholder="Write your review here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="background-color: #FF8C00; color: white;">Submit
+                        Review</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3" style="background-color: #f8f9fa; border-top: 1px solid #ccc;">
+        <p class="mb-0">&copy; 2025 FOMO. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript to update main image when a thumbnail is clicked -->
+    <script>
+        document.querySelectorAll('.thumbnail-image').forEach(function (thumbnail) {
+            thumbnail.addEventListener('click', function () {
+                document.getElementById('mainImage').src = this.src;
+            });
+        });
+    </script>
+</body>
+
+</html>
