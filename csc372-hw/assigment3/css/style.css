@@ -220,7 +220,7 @@ nav ul li a.active {
 }
 
 #featured-banner h2 {
-    color: #d35400;
+    color: #ff7e5f;
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -249,3 +249,13 @@ nav ul li a.active {
 #mealplan-banner p {
     font-size: 1.2em;
 }
+
+/* New Rule: Set h3 and strong elements to orange */
+
+strong {
+  color: #ff7e5f;
+  font-weight: lighter;
+}
+h3 {
+    color: #ff7e5f;
+  }
