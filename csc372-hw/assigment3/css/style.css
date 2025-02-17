@@ -1,0 +1,251 @@
+/* 
+  Name: jahsiyah varona
+  Date: 02.17.2025
+  CSC 372-01
+*/
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Generic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header and Footer with Gradient Backgrounds */
+header,
+footer {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 15px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1,
+footer p {
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+/* Main content styles */
+main {
+    margin-top: 30px;
+}
+
+/* Introduction section */
+#introduction {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid #ff7e5f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#recommendations article {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#recommendations article:hover {
+    transform: translateY(-3px);
+}
+
+.dish-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.dish-item {
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.dish-image {
+    max-width: 300px;
+    max-height: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+.dish-image:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Dish Details Sidebar */
+#dish-details {
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid #feb47b;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlight selected dish image */
+.dish-image.selected {
+    transform: scale(1.1);
+    border: 2px solid #ff7e5f;
+}
+
+/* Meal Plan Page Styles */
+.mealplan-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#dish-selection,
+#meal-plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#dish-selection h2,
+#meal-plan h2 {
+    margin-bottom: 15px;
+    color: #ff7e5f;
+}
+
+#dish-list,
+#meal-plan-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#dish-list li {
+    background-color: #f0f0f0;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#dish-list li:hover {
+    background-color: #e0e0e0;
+}
+
+#meal-plan-list li {
+    background-color: #fafafa;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.button-group button {
+    margin: 0 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff7e5f;
+    color: #fff;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #feb47b;
+}
+
+#total-cost {
+    margin-top: 15px;
+    font-weight: 700;
+    text-align: right;
+    font-size: 1.1em;
+    color: #333;
+}
+
+nav ul li a.active {
+    font-weight: bold !important;
+    color: #fa5204 !important;
+    /* Change the color if needed */
+}
+
+#featured-banner {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+#featured-banner h2 {
+    color: #d35400;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#featured-banner p {
+    color: #555;
+    font-size: 1.2em;
+}
+
+#mealplan-banner {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    color: #101010;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+#mealplan-banner h2 {
+    color: #d35400;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#mealplan-banner p {
+    font-size: 1.2em;
+}

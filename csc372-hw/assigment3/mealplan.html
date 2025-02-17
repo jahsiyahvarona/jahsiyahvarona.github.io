@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+  Name: jahsiyah varona
+  Date: 02.17.2025
+  CSC 372-01
+
+ 
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan - Campus Culinary Delights</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="site-title">Meal Plan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="mealplan.html">Meal Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- New Banner Section -->
+    <section id="mealplan-banner">
+        <h2>Craft Your Perfect Meal Plan!</h2>
+        <p>
+            Select your favorite dishes and customize your daily plan. Mix and match campus favorites
+            to create the perfect combination for your day.
+        </p>
+    </section>
+
+    <main class="mealplan-container">
+        <section id="dish-selection">
+            <h2>Select Your Dishes</h2>
+            <ul id="dish-list">
+                <!-- Happy Bowl UNCG with new dishes -->
+                <li data-dish="Hibachi Steak &amp; Shrimp" data-cost="10.75">Hibachi Steak &amp; Shrimp - $10.75</li>
+                <li data-dish="Fried Rice Bowl with Thai Chicken" data-cost="7.95">Fried Rice Bowl with Thai Chicken -
+                    $7.95</li>
+                <li data-dish="Hibachi Chicken &amp; Steak" data-cost="10.25">Hibachi Chicken &amp; Steak - $10.25</li>
+                <!-- East Coast Wings -->
+                <li data-dish="Buffalo Wings" data-cost="7.00">Buffalo Wings - $7.00</li>
+                <li data-dish="Honey BBQ Wings" data-cost="7.50">Honey BBQ Wings - $7.50</li>
+                <li data-dish="Spicy Garlic Wings" data-cost="8.00">Spicy Garlic Wings - $8.00</li>
+                <!-- Panda Express Greensboro -->
+                <li data-dish="Orange Chicken" data-cost="9.00">Orange Chicken - $9.00</li>
+                <li data-dish="Beijing Beef" data-cost="10.50">Beijing Beef - $10.50</li>
+                <li data-dish="Kung Pao Chicken" data-cost="9.50">Kung Pao Chicken - $9.50</li>
+            </ul>
+        </section>
+
+        <section id="meal-plan">
+            <h2>Your Meal Plan</h2>
+            <ul id="meal-plan-list">
+                <!-- Selected dishes will appear here dynamically by the javascript -->
+            </ul>
+            <div id="total-cost">
+                Total Cost: $<span id="cost-amount">0.00</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Campus Culinary Delights</p>
+    </footer>
+
+    <script src="js/mealplan.js"></script>
+</body>
+
+</html>
