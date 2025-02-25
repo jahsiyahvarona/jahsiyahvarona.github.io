@@ -72,3 +72,31 @@ footer p {
 .thumbnail-image:hover {
     transform: scale(1.05);
 }
+
+
+/* Brand color and custom classes */
+.bg-fomo {
+    background-color: #ff8c00 !important;
+  }
+  
+  .btn-fomo {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+  }
+  
+  .footer-custom {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .cart-product-image {
+    max-width: 100px;
+  }
+  
+  .quantity-input {
+    width: 80px;
+  }
+  

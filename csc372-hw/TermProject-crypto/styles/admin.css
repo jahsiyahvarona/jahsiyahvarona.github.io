@@ -1,0 +1,18 @@
+/* Admin specific styles */
+.bg-fomo-admin {
+    background-color: #ff8c00 !important;
+}
+.btn-fomo-admin {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+}
+.footer-custom-admin {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 1rem 0;
+}
+.logo-img {
+    height: 100px;
+}

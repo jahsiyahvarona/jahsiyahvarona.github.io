@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+  Name: jahsiyah varona
+  Date: 02.25.2025
+  CSC 372
+
+  This is the admin-upload.html page for the FOMO online store.
+  It allows admin users to bulk upload product data using a file.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FOMO Admin - Bulk Upload</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/admin.css" />
+</head>
+<body>
+  <!-- Admin Navigation -->
+  <nav class="navbar navbar-expand-lg bg-fomo-admin">
+    <div class="container">
+      <a class="navbar-brand" href="admin-upload.html">
+        <img src="/csc372-hw/TermProject-crypto/images/FOMO_logo.png" alt="FOMO Logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbar"
+              aria-controls="adminNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="adminNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="admin-upload.html">Bulk Upload</a></li>
+          <li class="nav-item"><a class="nav-link" href="admin-products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sign Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <h1>Bulk Product Upload</h1>
+    <p>Upload a file containing product data. Please ensure your file follows the format below:</p>
+    <pre>
+{
+  "products": [
+    {
+      "id": "product-001",
+      "name": "FOMO T-Shirt",
+      "description": "A stylish crypto-themed T-shirt.",
+      "category": "Apparel",
+      "image": "images/FOMO_tee/Front.png",
+      "price": 24.99
+    },
+    ...
+  ]
+}
+    </pre>
+    <p>Accepted file types: JSON, CSV, TXT</p>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="bulkUpload" class="form-label">Select file to upload</label>
+        <input type="file" class="form-control" id="bulkUpload" name="bulkUpload" accept=".json,.csv,.txt">
+      </div>
+      <button type="submit" class="btn btn-fomo-admin">Upload File</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-custom-admin">
+    <p>&copy; 2025 FOMO Admin. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
