@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+  Name: jahsiyah varona
+  Date: 03.07.2025
+  CSC 372
+
+  Description: This is the index page for the Rock-Paper-Scissors game application.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rock-Paper-Scissors</h1>
+    
+    <!-- Player's Throw Section -->
+    <section id="player-throw">
+      <h2>Your Move</h2>
+      <div class="choices">
+        <img src="images/rock.PNG" alt="Rock" class="choice" data-move="rock">
+        <img src="images/paper.PNG" alt="Paper" class="choice" data-move="paper">
+        <img src="images/scissors.PNG" alt="Scissors" class="choice" data-move="scissors">
+      </div>
+    </section>
+    
+    <!-- Computer's Throw Section -->
+    <section id="computer-throw">
+      <h2>Computer's Move</h2>
+      <img id="computer-img" src="images/question-mark.PNG" alt="Computer's Move">
+    </section>
+    
+    <!-- Outcome Section -->
+    <section id="result">
+      <h2>Outcome</h2>
+      <p id="result-text">Make your move!</p>
+    </section>
+    
+    <!-- Score Tracking Section -->
+    <section id="score">
+      <h2>Score</h2>
+      <div class="score-board">
+        <div class="score-item">Wins: <span id="wins">0</span></div>
+        <div class="score-item">Losses: <span id="losses">0</span></div>
+        <div class="score-item">Ties: <span id="ties">0</span></div>
+      </div>
+      <button id="reset">Reset Score</button>
+    </section>
+  </div>
+  
+  <script src="scripts/script.js"></script>
+</body>
+</html>

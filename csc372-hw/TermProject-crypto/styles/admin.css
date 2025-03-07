@@ -16,3 +16,8 @@
 .logo-img {
     height: 100px;
 }
+
+/* Navbar links hover effect */
+.navbar .nav-link:hover {
+    text-decoration: underline;
+}
