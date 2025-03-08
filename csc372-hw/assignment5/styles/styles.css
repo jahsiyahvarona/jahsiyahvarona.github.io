@@ -1,0 +1,186 @@
+/*
+  Name: jahsiyah varona
+  Date: 03.07.2025
+  CSC 372-01
+
+  This is the styles.css file for the github gallery assignment.
+  It provides animated, and vibrant look for the page.
+*/
+
+/* Animated Gradient Background */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #FF6B6B, #FFD93D);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Keyframes for the animated gradient background */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Container styling with a semi-transparent backdrop and rounded corners */
+  #container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header styling with animated headings */
+  header {
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  #main-heading {
+    font-size: 2.8rem;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideIn 1s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  #sub-heading {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Search form styling with creative focus effects */
+  #search-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+  
+  #search-form input[type="text"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 220px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  #search-form input[type="text"]:focus {
+    border-color: #4d96ff;
+    box-shadow: 0 0 8px rgba(77, 150, 255, 0.6);
+    outline: none;
+  }
+  
+  #search-form button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #ffbb00;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #search-form button:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+  }
+  
+  /* Gallery layout using flexbox */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  
+  /* Creative repository card styling */
+  .repo-card {
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .repo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Repository card headings and text */
+  .repo-card h3 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #4d96ff;
+    margin-bottom: 8px;
+  }
+  
+  .repo-card p {
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  /* Repository info styling */
+  .repo-info, .repo-languages, .repo-meta {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  /* Repository link button with hover effect */
+  a.repo-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffb700;
+    padding: 10px 14px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 12px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  a.repo-link:hover {
+    background-color: #000000;
+    transform: scale(1.03);
+  }
+  
+  /* Font awesome icon styling */
+  .repo-icon {
+    margin-right: 6px;
+    color: #000000;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .repo-card {
+      width: 90%;
+    }
+  }

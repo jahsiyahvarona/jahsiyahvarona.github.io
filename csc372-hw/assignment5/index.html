@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+  Name: jahsiyah varona
+  Date: 03.07.2025
+  CSC 372-01
+
+  This is the index.html page for the github gallery assignment.
+  It displays a search field for a github username and shows a gallery of repositories using GitHub's API.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>github gallery</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1 id="main-heading">github gallery</h1>
+      <p id="sub-heading">enter a github username to view their repositories</p>
+      <form id="search-form">
+        <input type="text" id="username" placeholder="github username" value="jahsiyahvarona" />
+        <button type="submit">search</button>
+      </form>
+    </header>
+    <main>
+      <div id="gallery" class="gallery"></div>
+    </main>
+    <footer>
+      <p>&copy; 2025 github gallery</p>
+    </footer>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
